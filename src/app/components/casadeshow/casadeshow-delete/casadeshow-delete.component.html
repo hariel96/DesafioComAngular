@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-title>
+        Deletar Casa de Show?
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome:" [(value)]="casadeshow.nome" name="nome" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereço:" [(value)]="casadeshow.endereco" name="endereco" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Capacidade:" [(value)]="casadeshow.capacidade" name="capacidade" disabled>
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)= "deleteCasadeShow()" color="warn">
+        Deletar
+    </button>
+    
+    <button mat-raised-button (click)= "cancel()">
+        Cancela
+    </button>
+</mat-card>
+

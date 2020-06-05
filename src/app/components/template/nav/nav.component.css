@@ -1,0 +1,23 @@
+.sidenav {
+    width: 200px;
+}
+
+.sidenav a {
+    color: white;
+}
+
+.sidenav i {
+    padding-right: 14px;
+}
+
+.content{
+    padding: 16px;
+    background-color: white;
+    color: black;
+}
+
+.nav-list a:hover {
+    color: #e35e6b;
+    
+    transition:0.3s;
+  }

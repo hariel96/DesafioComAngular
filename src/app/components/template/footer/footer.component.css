@@ -1,0 +1,40 @@
+.footer {
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px;
+    height: 45px;
+   
+}
+
+.footer{
+    font-size: 1.35rem;
+}
+
+.contatos{
+    display: flex;
+}
+
+.contatoTexto {
+    display: flex;
+    justify-content:center;
+}
+.icones {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icones i {
+    padding-left: 10px;
+}
+
+.contatos a {
+    color: black;
+}
+
+.icones a:hover{
+    text-shadow: 0px 0px 15px whitesmoke;
+    transition:0.3s;
+}

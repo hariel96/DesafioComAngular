@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title>
+        Cadastrar nova Casa de Show:
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome:" [(ngModel)]="casadeshow.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereço:" [(ngModel)]="casadeshow.endereco" name="endereco">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Capacidade:" [(ngModel)]="casadeshow.capacidade" name="capacidade" >
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)= "createCasadeShow()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)= "cancel()">
+        Cancela
+    </button>
+</mat-card>

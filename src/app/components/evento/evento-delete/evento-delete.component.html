@@ -1,0 +1,40 @@
+<mat-card>
+    <mat-card-title>
+        Deletar Evento?
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome:" [(value)]="evento.nome" name="nome" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição:" [(value)]="evento.descricao" name="descricao" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data:" [(value)]="evento.data" name="data" type="date" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Quantidade de Ingressos:" [(value)]="evento.qtd_ingressos"
+                name="qtd_ingressos" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço:" [(value)]="evento.preco" name="preco" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="evento">Casa de Show</mat-label>
+            <mat-select [(value)]="idCasa" name="idCasa">
+                <mat-option *ngFor="let tempcasadeshow of casasDeShow " [value]="tempcasadeshow.id">
+                    {{tempcasadeshow.nome}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button (click)="deleteEvento()" color="warn">
+        Deletar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancela
+    </button>
+</mat-card>
