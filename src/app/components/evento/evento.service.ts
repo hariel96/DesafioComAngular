@@ -35,7 +35,7 @@ export class EventoService {
   erroHandler(e: any): Observable<any> {
     this.showMessage('Ocorreu um erro!!', true)
     return EMPTY
-  }
+  } 
 
   findAll(): Observable<Evento[]> {
     return this.http.get<Evento[]>(this.baseUrl);
